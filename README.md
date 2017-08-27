@@ -1,4 +1,4 @@
-# Udacity Machine Learning Nanodegree Projects
+# Udacity Machine Learning Nanodegree Projects (Python3 version)
 
 Project0: titanic_survival_exploration
 
