@@ -1,10 +1,10 @@
 # Udacity Machine Learning Nanodegree Projects (Python3 version)
 
-Project0: titanic_survival_exploration
+Project0: titanic survival exploration
 
-Project1: predict_boston_housing
+Project1: predict boston housing
 
-Project2:
+Project2: finding donors for Charity
 
 Project3:
 
