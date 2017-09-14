@@ -8,9 +8,9 @@ Project2:
 
 Project3:
 
-Project4:
+Project4: train a cab to drive itself
 
-Project5:
+Project5: dog breed classifier
 
 Personal Project (Capstone):
 
