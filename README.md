@@ -6,7 +6,7 @@ Project1: predict boston housing
 
 Project2: finding donors for Charity
 
-Project3:
+Project3: customer segmentation
 
 Project4: train a cab to drive itself
 
