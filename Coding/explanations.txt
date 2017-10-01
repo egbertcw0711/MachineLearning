@@ -1,0 +1,14 @@
+question1:
+	I first compile a dictionary of counts for t and check with every possible consecutive substring sets in s. If any set is anagram of t, then we return True, else False. Comparing counts of all characters with a substring will can be done in linear time (O(len(s))) since we need to construct the dictionary for every substring. Looping through all possible consecutive substrings will take O(len(s)^2). Therefore, the time complexity of this algorithm is O(len(s)^3). space complexity is O(1) although we are creating a dictionary because we can have at most 52 characters and thus it is bounded.
+
+question2:
+	I used Manacher's algorithms because this is the most efficient way to solve this kind of problem. The time complexity is O(n) and the space complexity is O(1)
+
+question3:
+	I used Kruskal's algorithm because it solves minimum spanning tree problem efficiently. The time complexity is O(ElogV) and the time complexity is O(1)
+
+question4:
+	I used tree recursive because this problem is related to binary search tree. The time complexity is O(logN) and the space complexity is also O(logN)
+
+question5:
+	The time complexity is O(N) and the space complexity is O(1)

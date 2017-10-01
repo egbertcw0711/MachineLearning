@@ -95,7 +95,7 @@ def question3(G):
 	Using the Kruskal's algorithm
 	input: adjacency list (graph)
 	output: adjacency list (MST) """
-	
+
 	dics = {} # {val:[from, to]}
 
 	# the two for loop visit all edges in the graph: O(E)
@@ -196,13 +196,18 @@ print(question4([[0,0,0,0,0],
 				 [0,1,0,0,1],
 				 [0,0,0,0,0]],
 				 3,1,2)) # 1
-print("the correct answer should be 3\n ")
+print("the correct answer should be 1\n ")
 
+
+class Node(object):
+	def __init__(self, data):
+		self.data = data
+		self.next = None
 
 def question5(ll,m):
 	""" Find the element in a singly linked list 
 	that m element from the end
-	Inputs: ll:the first nodeof a linked list
+	Inputs: ll:the first node of a linked list
 			m: mth number from the end.
 	Output: the value of the node at that position
 	Note: assuming all the inputs are valid and m is chosen 
@@ -213,6 +218,7 @@ def question5(ll,m):
 	tmp = ll
 	while tmp.next != None:
 		tmp = tmp.next
+		length += 1
 
 	# find the value of the node at the position	
 	tmp = ll
@@ -220,11 +226,19 @@ def question5(ll,m):
 		tmp = tmp.next
 	return tmp.data
 
-# HOW TO WRITE THE TEST CASE ? #
-# class Node(object):
-# 	def __init__(self, data):
-# 		self.data = data
-# 		self.next = None
+# test cases
+print('\ntest question5 ...')
+# one node
+n1 = Node(1)
+print("my output: " + str(question5(n1,1))) # 1
+print("correct output: 1")
+
+n2 = Node(2)
+n1.next = n2
+print("my output: " + str(question5(n1,1))) # 2
+print("correct output: 2")
+print("my output: " + str(question5(n1,2))) # 1
+print("correct output: 1")
 
 
 
