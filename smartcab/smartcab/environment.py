@@ -332,6 +332,7 @@ class Environment(object):
 
 
         # Did the agent attempt a valid move?
+        # MODIFIED THIS FILE! This does not provide opt sol #
         if violation == 0:
             if action == agent.get_next_waypoint(): # Was it the correct action?
                 reward += 2 - penalty # (2, 1)

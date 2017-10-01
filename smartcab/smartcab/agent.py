@@ -5,8 +5,7 @@ from planner import RoutePlanner
 from simulator import Simulator
 
 class LearningAgent(Agent):
-    """ An agent that learns to drive in the Smartcab world.
-        This is the object you will be modifying. """ 
+    """ An agent that learns to drive in the Smartcab world. """ 
 
     def __init__(self, env, learning=False, epsilon=1.0, alpha=0.5):
         super(LearningAgent, self).__init__(env)     # Set the agent in the evironment 
