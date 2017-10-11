@@ -1,0 +1,19 @@
+X = double(rgb2gray(imread('harvey-saturday-goes7am.jpg')));
+[U,S,V] = svd(X);
+fig = imagesc(X);
+saveas(fig, 'original.png');
+errors = [];
+numbers = [];
+for i = [2,10,40]
+    X_compressed = U(:,1:i) * S(1:i, 1:i) * V(:,1:i).';
+    fig = imagesc(X_compressed);
+    error = norm(X_compressed - X) / norm(X);
+    number = (i+numel(U(:,1:i))+numel(V(:,1:i)));
+    errors = [errors, erros];
+    numbers = [numbers, number];
+    fprintf('For k=%i singluar vectors, the error is %.4f\n', i, error);
+    fprintf('For k=%i, numbers required for storage: %i\n', i, numbers);
+    saveas(fig, sprintf('%i_singular_vectors.png', i));
+end 
+   
+plot([2,10,40], err
